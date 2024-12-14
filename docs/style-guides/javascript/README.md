@@ -73,6 +73,8 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 -   Even if you must use spaces, **never** mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
 
+- For developers using the `@stdlib/regexp/whitespace` utility, note that it treats the NEL Unicode character (`\u0085`) as whitespace, unlike ECMAScript's `\s`. This may cause discrepancies in whitespace-sensitive code.
+
 ##### Enforcement
 
 This project contains an [`.editorconfig`][editorconfig] file to be used in conjunction with IDE and/or browser plugins.
